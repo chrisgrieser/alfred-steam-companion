@@ -7,9 +7,9 @@
 - searches the Steam Store – in the App or the default Browser
 - launches your wishlist
 
----
-
 [Download the Latest Release](https://github.com/chrisgrieser/pandoc_alfred/releases/latest)
+
+![screenshot of the workflow](https://i.imgur.com/7IHNte3.png)
 
 ---
 \**creating an alias by right-clicking the game in the Steam library does not work in the current Steam version, so this is basically a workaround*
