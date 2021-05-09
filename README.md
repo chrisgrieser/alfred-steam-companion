@@ -8,6 +8,10 @@
 - launches your wishlist
 
 ---
+
+[Download the Latest Release](https://github.com/chrisgrieser/pandoc_alfred/releases/latest)
+
+---
 \**creating an alias by right-clicking the game in the Steam library does not work in the current Steam version, so this is basically a workaround*
 
 made by [Chris Grieser](https://chris-grieser.de/)
