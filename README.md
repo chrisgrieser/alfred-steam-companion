@@ -14,7 +14,7 @@
 
 [Download the Latest Release](https://github.com/chrisgrieser/pandoc_alfred/releases/latest)
 
-![gif showcasing of the workflow](https://raw.githubusercontent.com/chrisgrieser/alfred-steam-companion/main/Steam%20Companion%20Showcase.gif)
+![gif showcasing of the workflow](https://i.imgur.com/DzjU6iA.gif)
 
 ---
 \**creating an alias by right-clicking the game in the Steam library does not work in the current Steam version, so this is basically a workaround*
