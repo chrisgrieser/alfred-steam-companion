@@ -2,6 +2,7 @@
 
 ### Workflow for Alfred that enables various interactions with Steam
 - launches a game, directly without opening the game library
+- installs a game from the library
 - uninstalls a game
 - creates an alias (shortcut) for a game\*
 - searches the Steam Store – in the App or the default Browser
@@ -9,22 +10,24 @@
 - validates game files
 - activates product
 - launch Steam in Big Picture (+ there is a remote trigger for this)
+- automatic updates of this workflow via OneUpdater
 
-### [DOWNLOAD the Latest Release](https://github.com/chrisgrieser/pandoc_alfred/releases/latest)
+[Download the Latest Release](https://github.com/chrisgrieser/pandoc_alfred/releases/latest)
+
+![gif showcasing of the workflow](https://raw.githubusercontent.com/chrisgrieser/alfred-steam-companion/main/Steam%20Companion%20Showcase.gif)
 
 ---
-
 \**creating an alias by right-clicking the game in the Steam library does not work in the current Steam version, so this is basically a workaround*
 
 made by [Chris Grieser](https://chris-grieser.de/)
 
-![screenshot of the workflow](https://i.imgur.com/T8MpEym.png)
-
----
-
+--- 
 ### Release Notes
 
-*version 1.1:*
+version 1.2:
+- search Steam library for a game to install (only works on public profiles)
+
+version 1.1: 
 - launch in Big Picture
 - validation of local game files
 - activate product
@@ -32,5 +35,5 @@ made by [Chris Grieser](https://chris-grieser.de/)
 - restructuring of workflow, uses a script-filter instead of multiple keywords for easier search
 - individual icons for all the options
 
-*version 1.0:*
+version 1.0: 
 - Initial release
