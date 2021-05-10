@@ -12,11 +12,12 @@
 - launch Steam in Big Picture (+ there is a remote trigger for this)
 - automatic updates of this workflow via OneUpdater
 
-[Download the Latest Release](https://github.com/chrisgrieser/pandoc_alfred/releases/latest)
+### [Download the Latest Release](https://github.com/chrisgrieser/alfred-steam-companion/releases/latest)
 
 ![gif showcasing of the workflow](https://i.imgur.com/DzjU6iA.gif)
 
 ---
+
 \**creating an alias by right-clicking the game in the Steam library does not work in the current Steam version, so this is basically a workaround*
 
 made by [Chris Grieser](https://chris-grieser.de/)
