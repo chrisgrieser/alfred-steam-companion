@@ -575,10 +575,11 @@
 				<integer>0</integer>
 				<key>script</key>
 				<string># THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
-readonly remote_info_plist=''
-readonly workflow_url=''
-readonly download_type=''
-readonly frequency_check=''
+readonly remote_info_plist='https://raw.githubusercontent.com/chrisgrieser/alfred-steam-companion/main/info.plist'
+readonly workflow_url='chrisgrieser/alfred-steam-companion'
+readonly download_type='github_release'
+readonly frequency_check='1'
+
 
 # FROM HERE ON, CODE SHOULD BE LEFT UNTOUCHED!
 function abort {
@@ -1666,8 +1667,9 @@ echo {query}</string>
 ---
 ### Release Notes
 
-version 1.2.1
+version 1.2.2
 - performance improvement by adapting the OneUpdater implementation.
+- fixed OneUpdater not working properly in 1.2
 
 version 1.2:
 - search Steam library for a game to install (only works on public profiles)
@@ -2037,7 +2039,7 @@ version 1.0:
 		<string>path_for_aliases</string>
 	</array>
 	<key>version</key>
-	<string>1.2.1</string>
+	<string>1.2.2</string>
 	<key>webaddress</key>
 	<string>chris-grieser.de</string>
 </dict>
