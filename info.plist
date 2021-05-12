@@ -5,7 +5,7 @@
 	<key>bundleid</key>
 	<string>de.chris-grieser.steam-companion</string>
 	<key>category</key>
-	<string>created or edited by me</string>
+	<string>My Workflows</string>
 	<key>connections</key>
 	<dict>
 		<key>0F024FB6-9D47-4A64-A807-FD42D1F697AA</key>
@@ -258,6 +258,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>5EB83EDB-2478-4B1E-AAD4-BA993B3B8FDC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7EB91449-3925-4942-B516-80A92E4819BA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>6571DEB8-0637-47AB-9946-98AFF4A9D09A</key>
 		<array>
 			<dict>
@@ -342,7 +355,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>ECF2FEBD-CFCD-4DD1-B551-E24321B84783</string>
+				<string>05C4C60C-B10E-458D-AC84-D9FB7F295D35</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -433,23 +446,13 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2BC90605-AE6E-4661-82E9-91024CC95AF0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
 				<string>B4C3B9D0-9DDC-472E-89C6-462FACD938A5</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 		<key>E1C0E12A-84DE-45BB-95B9-FD0D6C82FC5E</key>
@@ -566,34 +569,16 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
+				<key>concurrently</key>
 				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
 				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
 				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
 				<key>script</key>
 				<string># THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
-readonly remote_info_plist='https://raw.githubusercontent.com/chrisgrieser/alfred-steam-companion/main/info.plist'
-readonly workflow_url='chrisgrieser/alfred-steam-companion'
-readonly download_type='github_release'
-readonly frequency_check='1'
+readonly remote_info_plist=''
+readonly workflow_url=''
+readonly download_type=''
+readonly frequency_check=''
 
 # FROM HERE ON, CODE SHOULD BE LEFT UNTOUCHED!
 function abort {
@@ -662,21 +647,15 @@ fi</string>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string></string>
 				<key>type</key>
 				<integer>0</integer>
-				<key>withspace</key>
-				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>2BC90605-AE6E-4661-82E9-91024CC95AF0</string>
+			<string>7EB91449-3925-4942-B516-80A92E4819BA</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -768,25 +747,6 @@ fi</string>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>EC0B05EC-ED7C-47A7-8B30-1C2238CF6618</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>steam://install/{var:game_id}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>2D4B614B-7170-4B16-9B24-11F91FE6B24A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -887,6 +847,25 @@ fi</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>1BB84FD8-A5C0-45D1-93FA-934D88611360</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>steam://install/{var:game_id}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>2D4B614B-7170-4B16-9B24-11F91FE6B24A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1444,19 +1423,6 @@ echo | ( IFS=$'\n'; for D in ~/Library/Application\ Support/Steam $(egrep '^[^"]
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>path</key>
-				<string>~/Library/Application Support/Steam/steamapps/common/{var:game_name}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.revealfile</string>
-			<key>uid</key>
-			<string>ECF2FEBD-CFCD-4DD1-B551-E24321B84783</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1591,6 +1557,21 @@ echo {query}</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>~/Library/Application Support/Steam/steamapps/common/{var:game_name}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>05C4C60C-B10E-458D-AC84-D9FB7F295D35</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string>{var:path_for_aliases}</string>
 				<key>passthroughargument</key>
@@ -1664,7 +1645,7 @@ echo {query}</string>
 - launches a game, directly without opening the game library
 - installs a game from the library
 - uninstalls a game
-- creates an alias (shortcut) for a game\*
+- creates an alias (shortcut) for a game *(creating an alias by right-clicking the game in the Steam library does not work in the current Steam version, so this is basically a workaround)*
 - searches the Steam Store – in the App or the default Browser
 - launches your wishlist
 - validates game files
@@ -1672,17 +1653,21 @@ echo {query}</string>
 - launch Steam in Big Picture (+ there is a remote trigger for this)
 - automatic updates of this workflow via OneUpdater
 
-[Download the Latest Release](https://github.com/chrisgrieser/pandoc_alfred/releases/latest)
+---
 
-![screenshot of the workflow](https://i.imgur.com/T8MpEym.png)
+### [Download the Latest Release](https://github.com/chrisgrieser/alfred-steam-companion/releases/latest)
+
+*made by [Chris Grieser](https://chris-grieser.de/)*
 
 ---
-\**creating an alias by right-clicking the game in the Steam library does not work in the current Steam version, so this is basically a workaround*
 
-made by [Chris Grieser](https://chris-grieser.de/)
+![gif showcasing of the workflow](https://i.imgur.com/DzjU6iA.gif)
 
---- 
+---
 ### Release Notes
+
+version 1.2.1
+- performance improvement by adapting the OneUpdater implementation.
 
 version 1.2:
 - search Steam library for a game to install (only works on public profiles)
@@ -1699,12 +1684,21 @@ version 1.0:
 - Initial release</string>
 	<key>uidata</key>
 	<dict>
+		<key>05C4C60C-B10E-458D-AC84-D9FB7F295D35</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>1200</integer>
+			<key>ypos</key>
+			<integer>690</integer>
+		</dict>
 		<key>0B8FFCC6-8C9B-4DEF-89A3-299B7735ACCE</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>815</integer>
+			<integer>795</integer>
 			<key>ypos</key>
 			<integer>365</integer>
 		</dict>
@@ -1713,7 +1707,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>540</integer>
+			<integer>520</integer>
 			<key>ypos</key>
 			<integer>690</integer>
 		</dict>
@@ -1722,7 +1716,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>475</integer>
+			<integer>455</integer>
 			<key>ypos</key>
 			<integer>770</integer>
 		</dict>
@@ -1731,7 +1725,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>280</integer>
+			<integer>260</integer>
 			<key>ypos</key>
 			<integer>290</integer>
 		</dict>
@@ -1740,7 +1734,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>950</integer>
+			<integer>930</integer>
 			<key>ypos</key>
 			<integer>690</integer>
 		</dict>
@@ -1749,34 +1743,23 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>415</integer>
+			<integer>395</integer>
 			<key>ypos</key>
 			<integer>695</integer>
-		</dict>
-		<key>2BC90605-AE6E-4661-82E9-91024CC95AF0</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>12</integer>
-			<key>note</key>
-			<string>OneUpdater</string>
-			<key>xpos</key>
-			<integer>285</integer>
-			<key>ypos</key>
-			<integer>130</integer>
 		</dict>
 		<key>2D4B614B-7170-4B16-9B24-11F91FE6B24A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1220</integer>
+			<integer>1200</integer>
 			<key>ypos</key>
-			<integer>285</integer>
+			<integer>290</integer>
 		</dict>
 		<key>2F5A0881-383A-40BB-B4F2-6C35477F16F5</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>1075</integer>
+			<integer>1055</integer>
 			<key>ypos</key>
 			<integer>465</integer>
 		</dict>
@@ -1785,7 +1768,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>415</integer>
+			<integer>395</integer>
 			<key>ypos</key>
 			<integer>745</integer>
 		</dict>
@@ -1794,7 +1777,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>280</integer>
+			<integer>260</integer>
 			<key>ypos</key>
 			<integer>690</integer>
 		</dict>
@@ -1803,7 +1786,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>475</integer>
+			<integer>455</integer>
 			<key>ypos</key>
 			<integer>720</integer>
 		</dict>
@@ -1812,7 +1795,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>615</integer>
+			<integer>595</integer>
 			<key>ypos</key>
 			<integer>365</integer>
 		</dict>
@@ -1821,16 +1804,16 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>1220</integer>
+			<integer>1200</integer>
 			<key>ypos</key>
-			<integer>130</integer>
+			<integer>160</integer>
 		</dict>
 		<key>6571DEB8-0637-47AB-9946-98AFF4A9D09A</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>9</integer>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>285</integer>
+			<integer>265</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
@@ -1839,7 +1822,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>615</integer>
+			<integer>595</integer>
 			<key>ypos</key>
 			<integer>130</integer>
 		</dict>
@@ -1848,16 +1831,27 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>465</integer>
+			<integer>445</integer>
 			<key>ypos</key>
 			<integer>430</integer>
+		</dict>
+		<key>7EB91449-3925-4942-B516-80A92E4819BA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
+			<key>note</key>
+			<string>OneUpdater</string>
+			<key>xpos</key>
+			<integer>1200</integer>
+			<key>ypos</key>
+			<integer>10</integer>
 		</dict>
 		<key>7EC0740E-6D07-4BED-9068-D9BED0F9501E</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>615</integer>
+			<integer>595</integer>
 			<key>ypos</key>
 			<integer>490</integer>
 		</dict>
@@ -1866,7 +1860,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>955</integer>
+			<integer>935</integer>
 			<key>ypos</key>
 			<integer>520</integer>
 		</dict>
@@ -1875,7 +1869,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>760</integer>
+			<integer>740</integer>
 			<key>ypos</key>
 			<integer>520</integer>
 		</dict>
@@ -1884,7 +1878,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<integer>470</integer>
+			<integer>450</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
@@ -1893,7 +1887,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>475</integer>
+			<integer>455</integer>
 			<key>ypos</key>
 			<integer>670</integer>
 		</dict>
@@ -1902,7 +1896,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1085</integer>
+			<integer>1065</integer>
 			<key>ypos</key>
 			<integer>690</integer>
 		</dict>
@@ -1911,16 +1905,16 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>1090</integer>
+			<integer>1070</integer>
 			<key>ypos</key>
-			<integer>130</integer>
+			<integer>160</integer>
 		</dict>
 		<key>9CCA0473-2BF0-4783-9CE0-69BD10FFC23F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>1015</integer>
+			<integer>995</integer>
 			<key>ypos</key>
 			<integer>520</integer>
 		</dict>
@@ -1929,7 +1923,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>1220</integer>
+			<integer>1200</integer>
 			<key>ypos</key>
 			<integer>430</integer>
 		</dict>
@@ -1938,7 +1932,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>175</integer>
+			<integer>155</integer>
 			<key>ypos</key>
 			<integer>375</integer>
 		</dict>
@@ -1947,16 +1941,16 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>955</integer>
+			<integer>935</integer>
 			<key>ypos</key>
-			<integer>130</integer>
+			<integer>160</integer>
 		</dict>
 		<key>BF59A4CC-06C0-46C8-A983-CFD5C0DBF0AA</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>680</integer>
+			<integer>660</integer>
 			<key>ypos</key>
 			<integer>690</integer>
 		</dict>
@@ -1965,7 +1959,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>615</integer>
+			<integer>595</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
@@ -1974,7 +1968,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>815</integer>
+			<integer>795</integer>
 			<key>ypos</key>
 			<integer>490</integer>
 		</dict>
@@ -1983,7 +1977,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>30</integer>
+			<integer>10</integer>
 			<key>ypos</key>
 			<integer>345</integer>
 		</dict>
@@ -1992,7 +1986,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>210</integer>
 			<key>ypos</key>
 			<integer>375</integer>
 		</dict>
@@ -2001,7 +1995,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>465</integer>
+			<integer>445</integer>
 			<key>ypos</key>
 			<integer>550</integer>
 		</dict>
@@ -2010,25 +2004,16 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>615</integer>
+			<integer>595</integer>
 			<key>ypos</key>
 			<integer>245</integer>
-		</dict>
-		<key>ECF2FEBD-CFCD-4DD1-B551-E24321B84783</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>1220</integer>
-			<key>ypos</key>
-			<integer>690</integer>
 		</dict>
 		<key>ED6135B3-C7DF-4145-B892-4F3C5BAC1A68</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>1220</integer>
+			<integer>1200</integer>
 			<key>ypos</key>
 			<integer>550</integer>
 		</dict>
@@ -2037,7 +2022,7 @@ version 1.0:
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>815</integer>
+			<integer>795</integer>
 			<key>ypos</key>
 			<integer>690</integer>
 		</dict>
@@ -2052,7 +2037,7 @@ version 1.0:
 		<string>path_for_aliases</string>
 	</array>
 	<key>version</key>
-	<string>1.2</string>
+	<string>1.2.1</string>
 	<key>webaddress</key>
 	<string>chris-grieser.de</string>
 </dict>
