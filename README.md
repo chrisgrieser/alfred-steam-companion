@@ -12,13 +12,9 @@
 - launch Steam in Big Picture (+ there is a remote trigger for this)
 - automatic updates of this workflow via OneUpdater
 
----
-
 ### [Download the Latest Release](https://github.com/chrisgrieser/alfred-steam-companion/releases/latest)
 
 *made by [Chris Grieser](https://chris-grieser.de/)*
-
----
 
 ![gif showcasing of the workflow](https://i.imgur.com/DzjU6iA.gif)
 
